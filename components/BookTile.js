@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
       marginVertical: '2%',
     },
     title:{
-      fontSize: 18,
+      fontSize: 25,
       fontWeight: "600",
     },
     text:{
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
       paddingBottom: 10,
     },
     isbn:{
-      paddingTop: 3,
+      paddingTop: 5,
       fontSize: 16,
     },
     bookRead: {

@@ -6,11 +6,11 @@ import BookTile from './components/BookTile';
 export default function App() {
   return (
     <ScrollView style={styles.container}>
-      <View> 
+      <View style={styles.flex}> 
         <Text style={styles.header1}>Bookshop</Text>
         <View>
           <Image style={styles.imgShoppingCart} source={require('../challenge_1/assets/shopping-cart.png')}/>
-          <Text>1</Text>
+          <Text style={styles.amount}>1</Text>
         </View>
       </View>
       <View style={styles.tilesContainer}>
@@ -29,7 +29,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   header1: {
-    fontSize: 32,
+    fontSize: 36,
     fontWeight: '800',
     },
   container: {
@@ -39,7 +39,17 @@ const styles = StyleSheet.create({
     paddingRight: 20,
   },
   imgShoppingCart: {
+    marginTop: 10,
+    marginRight: 5,
     height: 25,
     width: 25,
+  },
+  flex: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  amount: {
+    paddingLeft: 25,
   },
 });
