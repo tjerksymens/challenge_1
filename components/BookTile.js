@@ -15,8 +15,8 @@ const Book = (props) => {
             </TouchableWithoutFeedback>
             <Text style={styles.text}>{props.author}</Text>
             <Text style={styles.text}>{props.shortText}</Text>
-            <View>
-              <Text style={styles.text}>{props.isbn}</Text>
+            <View style={styles.flex}>
+              <Text style={styles.isbn}>{props.isbn}</Text>
               <TouchableWithoutFeedback onPress={() => handleRead()}>
                 <Text style={styles.bookRead}>read</Text>
               </TouchableWithoutFeedback>
@@ -40,11 +40,23 @@ const styles = StyleSheet.create({
     },
     text:{
       fontSize: 16,
+      paddingBottom: 10,
+    },
+    isbn:{
+      paddingTop: 3,
+      fontSize: 16,
     },
     bookRead: {
       borderColor: '#B4B8DA',
       borderWidth: 1,
       borderStyle: 'solid',
-      marginVertical: '2%',
+      paddingVertical: 4,
+      paddingHorizontal: 10,
+      marginBottom: 10,
+    },
+    flex: {
+      flex: 1,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
     },
   });

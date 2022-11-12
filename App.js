@@ -9,6 +9,7 @@ export default function App() {
       <View> 
         <Text style={styles.header1}>Bookshop</Text>
         <View>
+          <Image style={styles.imgShoppingCart} source={require('../challenge_1/assets/shopping-cart.png')}/>
           <Text>1</Text>
         </View>
       </View>
@@ -37,8 +38,8 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
   },
-  shopingCart: {
-    width: '100%',
-    height: 110,
+  imgShoppingCart: {
+    height: 25,
+    width: 25,
   },
 });
