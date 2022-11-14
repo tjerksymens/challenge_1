@@ -1,13 +1,14 @@
 import { StyleSheet, Text, View, TouchableWithoutFeedback } from 'react-native';
 
-function handlePress(){
-  console.log('Book pressed')
-}
 
-function handleRead() {
-  console.log("Book read");
-}
 const Book = (props) => { 
+  function handlePress(){
+    console.log(props.title + ' pressed')
+  }
+  
+  function handleRead() {
+    console.log(props.title + " read");
+  }
     return (
         <View style={styles.tile}>
             <TouchableWithoutFeedback onPress={() => handlePress()}>
